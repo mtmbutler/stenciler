@@ -1,0 +1,12 @@
+name: Marie Curie
+summary: |
+    Physicist, chemist, two-time Nobel Prize winner, enjoys long bicycle trips.
+awards:
+- name: Nobel Prize in Chemistry
+  year: 1911
+- name: Albert Medal
+  year: 1910
+- name: Davy Medal
+  year: 1903
+- name: Nobel Prize in Physics
+  year: 1903

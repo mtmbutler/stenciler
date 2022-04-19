@@ -1,0 +1,5 @@
+[MASTER]
+ignore-patterns=.venv
+jobs=0
+disable=print-statement,
+        invalid-name,

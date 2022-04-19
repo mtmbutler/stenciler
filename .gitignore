@@ -1,0 +1,8 @@
+# Environment
+.venv
+.envrc
+
+# Python
+*pyc
+*.egg-info
+build

@@ -1,0 +1,8 @@
+-e .
+black
+flake8
+ipython
+isort
+mypy
+types-PyYAML
+pylint

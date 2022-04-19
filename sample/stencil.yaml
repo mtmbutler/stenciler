@@ -1,0 +1,25 @@
+txt: |
+  Name:       {{ name }}
+
+  SUMMARY
+  ----------------------------------------------------------------------------------
+  {{ summary | replace('\n', ' ') | wordwrap(80) }}
+
+  AWARDS
+  ----------------------------------------------------------------------------------
+  {% for award in awards %}{{ award.name }}{{ " " * (78 - award.name.__len__()) }}{{ award.year}}
+  {% endfor %}
+tex: |
+  \documentclass{article}
+  \begin{document}
+  {\huge\centering {{ name }}\\[-0.7\baselineskip]\hrulefill\par}
+
+  \subsection*{Summary}
+  {{ summary | replace('\n', ' ') | wordwrap(80) }}
+
+  \subsection*{Education}
+  {% for award in awards %}
+  \noindent {{ award.name }} \hfill {{ award.year }}
+  {% endfor %}
+
+  \end{document}

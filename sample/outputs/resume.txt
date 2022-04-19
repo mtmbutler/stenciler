@@ -1,0 +1,12 @@
+Name:       Marie Curie
+
+SUMMARY
+----------------------------------------------------------------------------------
+Physicist, chemist, two-time Nobel Prize winner, enjoys long bicycle trips.
+
+AWARDS
+----------------------------------------------------------------------------------
+Nobel Prize in Chemistry                                                      1911
+Albert Medal                                                                  1910
+Davy Medal                                                                    1903
+Nobel Prize in Physics                                                        1903

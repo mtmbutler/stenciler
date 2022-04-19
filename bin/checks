@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+echo "Running: isort"
+isort --quiet .
+
+echo "Running: black"
+black --quiet .
+
+echo "Running: flake8"
+flake8 stenciler
+
+echo "Running: mypy"
+mypy --no-error-summary stenciler
+
+echo "Running: pylint"
+pylint --score=n stenciler
+
+echo "Done"
