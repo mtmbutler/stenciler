@@ -26,13 +26,13 @@ summary: |
     Physicist, chemist, two-time Nobel Prize winner, enjoys long bicycle trips.
 awards:
 - name: Nobel Prize in Chemistry
-  year: "1911"
+  year: 1911
 - name: Albert Medal
-  year: "1910"
+  year: 1910
 - name: Davy Medal
-  year: "1903"
+  year: 1903
 - name: Nobel Prize in Physics
-  year: "1903"
+  year: 1903
 ```
 
 Now, set up your stencil. This yaml file should have a simple dictionary structure
@@ -50,7 +50,7 @@ txt: |
 
   AWARDS
   ----------------------------------------------------------------------------------
-  {% for award in awards %}{{ award.name }}{{ " " * (82 - award.name.__len__() - award.year.__len__()) }}{{ award.year}}
+  {% for award in awards %}{{ award.name }}{{ " " * (78 - award.name.__len__()) }}{{ award.year}}
   {% endfor %}
 tex: |
   \documentclass{article}
@@ -92,7 +92,7 @@ Davy Medal                                                                    19
 Nobel Prize in Physics                                                        1903
 ```
 
-```
+```tex
 # outputs/resume.tex
 \documentclass{article}
 \begin{document}
