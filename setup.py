@@ -1,12 +1,23 @@
 """Installation script for stenciler."""
+from pathlib import Path
+
 from setuptools import find_packages, setup
 
-from stenciler import __desc__
+
+def get_readme_text() -> str:
+    """Gets the contents of the README."""
+    return (Path(__file__).parent / "README.md").read_text(encoding="utf8")
+
 
 setup(
     name="stenciler",
-    version="0.1.0",
-    description=__desc__,
+    version="0.1.1",
+    description=(
+        "A CLI tool for building plaintext artifacts by populating Jinja templates"
+        " from YAML files."
+    ),
+    long_description=get_readme_text(),
+    long_description_content_type="text/markdown",
     author="Miles Butler",
     author_email="miles@milesbutler.dev",
     url="https://github.com/mtmbutler/stenciler",

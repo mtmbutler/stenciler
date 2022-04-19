@@ -5,13 +5,14 @@ from pathlib import Path
 import jinja2
 import yaml
 
-from stenciler import __desc__
-
 
 def cli():
     """Main function."""
     # Inputs
-    parser = argparse.ArgumentParser(__desc__)
+    parser = argparse.ArgumentParser(
+        "A CLI tool for building plaintext artifacts by populating Jinja templates"
+        " from YAML files."
+    )
     parser.add_argument(
         "-s", "--stencil", help="Path to stencil YAML file.", action="store"
     )
